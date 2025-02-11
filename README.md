@@ -30,7 +30,7 @@
 - Scrape data from websites
 - So much more
 
-We are going to make a BASIC bot that can read when a user sends message `!bot` and then send back ``
+We are going to make a BASIC bot that can read when a user sends message `!doug` and then send back `give me your kidneys`
 
 <a id="step-2"></a>
 ## Step 2 - Setup Discord Developer Portal and Bot
@@ -73,16 +73,16 @@ We are going to make a BASIC bot that can read when a user sends message `!bot` 
 - This will help manage our dependencies
 
 ```bash
-# Make sure in a folder you want and create a "virtual environment"
-python3 -m venv ./venv
+# Make sure you are in a folder you want and create a "virtual environment" in `venv` folder
+python3 -m venv venv
 
 # 'source' the activate script
-source ./bin/activate
+source venv/bin/activate
 ```
 
 ##### Install dependencies
 
-- `discord` is the package we use to interact with Discord 
+- `discord` is the package we use to interact with Discord
 - `python-dotenv` is used to keep our secret tokens SECRET
 - `audioop-lts` is required for `discord` package to work idk why
 
